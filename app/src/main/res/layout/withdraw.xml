@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Input Uang untuk diwithdraw" />
@@ -31,13 +32,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/jam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tanggal withdraw" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"

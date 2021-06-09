@@ -2,10 +2,9 @@ package com.example.myapplication;
 
 public class ExampleItem{
     private int mImageResources;
-    private String mText1;
-    private String mText2;
+    private int mText1,mText2;
 
-    public ExampleItem(int ImageResources, String Text1, String Text2){
+    public ExampleItem(int ImageResources, int Text1, int Text2){
         mImageResources = ImageResources;
         mText1 = Text1;
         mText2 = Text2;
@@ -14,11 +13,11 @@ public class ExampleItem{
     public int getmImageResources(){
         return mImageResources;
     }
-    public String getmText1() {
+    public int getmText1() {
         return mText1;
     }
 
-    public String getmText2() {
+    public int getmText2() {
         return mText2;
     }
 }
