@@ -1,15 +1,24 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class Recycleviewer{
+    private int mImageResources;
+    private String mText1;
+    private String mText2;
 
-import android.os.Bundle;
+    public Exampleitem(int ImageResources, String Text1, String Text2){
+        mImageResources = ImageResources;
+        mText1 = Text1;
+        mText2 = Text2;
+    }
 
-public class Recycleviewer extends AppCompatActivity {
+    public int getmImageResources(){
+        return mImageResources;
+    }
+    public String getmText1() {
+        return mText1;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.result);
-
+    public String getmText2() {
+        return mText2;
     }
 }
