@@ -16,7 +16,9 @@ public class draw extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Deposit);
+        setContentView(R.layout.deposit);
+        pushme();
+        ASSO();
 
     }
 
@@ -33,7 +35,7 @@ public class draw extends AppCompatActivity {
         });
     }
 
-    private void ASS() {
+    private void ASSO() {
         nama1 = findViewById(R.id.wan);
         cash = findViewById(R.id.map);
         butt = findViewById(R.id.inputed);
