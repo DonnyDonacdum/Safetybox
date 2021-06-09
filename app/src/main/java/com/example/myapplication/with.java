@@ -26,6 +26,7 @@ public class with extends AppCompatActivity {
             public void onClick(View v) {
                 int nama = Integer.parseInt(name.getEditText().getText().toString().trim());
                 int jumlah = Integer.parseInt(money.getEditText().getText().toString().trim());
+
             }
         });
     }
