@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".with">>
+    tools:context=".draw">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -20,7 +20,7 @@
             android:id="@+id/wan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input Uang untuk diwithdraw" />
+            android:hint="Input Uang untuk dideposit" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -36,7 +36,7 @@
             android:id="@+id/map"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tanggal withdraw" />
+            android:hint="Tanggal deposit" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

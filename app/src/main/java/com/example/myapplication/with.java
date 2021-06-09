@@ -1,6 +1,7 @@
 package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,14 +27,16 @@ public class with extends AppCompatActivity {
             public void onClick(View v) {
                 int nama = Integer.parseInt(name.getEditText().getText().toString().trim());
                 int jumlah = Integer.parseInt(money.getEditText().getText().toString().trim());
-
+                Intent intent = new Intent(with.this,MainActivity2.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
 
     private void ASS() {
-        name = findViewById(R.id.uang);
-        money  = findViewById(R.id.jam);
-        button = findViewById(R.id.input);
+        name = findViewById(R.id.wan);
+        money  = findViewById(R.id.map);
+        button = findViewById(R.id.inputed);
     }
 }

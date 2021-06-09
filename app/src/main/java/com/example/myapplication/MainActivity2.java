@@ -18,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         ArrayList<ExampleItem> examplelist = new ArrayList<>();
-        examplelist.add(new ExampleItem(R.drawable.ic_android, 10, 23/6/2021));
+        examplelist.add(new ExampleItem(R.drawable.logo_2, 10, 23/6/2021));
 
         mRecycleView = findViewById(R.id.recycleView);
         mRecycleView.setHasFixedSize(true);
