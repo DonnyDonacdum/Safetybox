@@ -26,7 +26,9 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
             mTextView2 = itemView.findViewById(R.id.Textview2);
         }
     }
-    public ExampleAdapter(ArrayList<ExampleItem> exampleList) {}
+    public ExampleAdapter(ArrayList<ExampleItem> exampleList) {
+        mExampleList = exampleList;
+    }
 
     @NonNull
     @Override
@@ -38,11 +40,15 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
 
     @Override
     public void onBindViewHolder(@NonNull  ExampleAdapter.ExampleViewHolder holder, int position) {
+        ExampleItem currentItem = mExampleList.get(position);
+        holder.mImageView.setImageResource(currentItem.getmImageResources());
+        holder.mTextView1.setText(currentItem.getmText1());
+        holder.mTextView2.setText(currentItem.getmText2());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mExampleList.size();
     }
 }
