@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
-public class Recycleviewer{
+public class ExampleItem{
     private int mImageResources;
     private String mText1;
     private String mText2;
 
-    public Exampleitem(int ImageResources, String Text1, String Text2){
+    public ExampleItem(int ImageResources, String Text1, String Text2){
         mImageResources = ImageResources;
         mText1 = Text1;
         mText2 = Text2;
