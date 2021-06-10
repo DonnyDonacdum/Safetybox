@@ -13,6 +13,9 @@ private Button meep,maad;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        What();
+        pushher();
+        pushme();
 
     }
 
