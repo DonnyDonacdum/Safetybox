@@ -24,9 +24,9 @@ public class deposit_new extends AppCompatActivity {
         input_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int input_1 = Integer.parseInt(Input_1.getEditText().getText().toString().trim());
-                int input_2 = Integer.parseInt(Input_2.getEditText().getText().toString().trim());
                 Intent intent = new Intent(getBaseContext(), MainActivity2.class);
+                intent.putExtra("input_1",Input_1.getEditText().getText().toString().trim());
+                intent.putExtra("input2",Input_2.getEditText().getText().toString().trim());
                 startActivity(intent);
                 finish();
             }

@@ -5,28 +5,26 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
-    private RecyclerView mRecycleView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutmanager;
+
+    private TextView result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        ArrayList<ExampleItem> examplelist = new ArrayList<>();
-        examplelist.add(new ExampleItem(R.drawable.logo_2, 10, 23/6/2021));
 
-        mRecycleView = findViewById(R.id.recycleView);
-        mRecycleView.setHasFixedSize(true);
-        mLayoutmanager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(examplelist);
+        String input_1 = getIntent().getExtras().getString("input_1" );
+        String input_2 = getIntent().getExtras().getString("input_2");
 
-        mRecycleView.setLayoutManager(mLayoutmanager);
-        mRecycleView.setAdapter(mAdapter);
+        result = findViewById(R.id.result);
+        result.setText("Deposit Anda yaitu:" +input_1+ "Pada tanggal" +input_2);
+
+
 
     }
 }
