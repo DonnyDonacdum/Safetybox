@@ -17,7 +17,7 @@ public class MainActivity3 extends AppCompatActivity {
         String input_4 = getIntent().getExtras().getString("input_4");
 
         result2 = findViewById(R.id.result2);
-        result2.setText("Deposit Anda yaitu:" +input_3+ "Pada tanggal" +input_4);
+        result2.setText("Deposit Anda yaitu:  " +input_3+ "  Pada tanggal:   " +input_4);
 
 
 

@@ -22,7 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
         String input_2 = getIntent().getExtras().getString("input_2");
 
         result = findViewById(R.id.result);
-        result.setText("Deposit Anda yaitu:" +input_1+ "Pada tanggal" +input_2);
+        result.setText("Deposit Anda yaitu:" +input_1+ " Pada tanggal: " +input_2);
 
 
 
