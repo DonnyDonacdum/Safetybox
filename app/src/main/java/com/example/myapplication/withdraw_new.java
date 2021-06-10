@@ -24,9 +24,9 @@ public class withdraw_new extends AppCompatActivity {
         Input2_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int input_1 = Integer.parseInt(Input_3.getEditText().getText().toString().trim());
-                int input_2 = Integer.parseInt(Input_4.getEditText().getText().toString().trim());
                 Intent intent = new Intent(getBaseContext(), MainActivity2.class);
+                intent.putExtra("input_3",Input_3.getEditText().getText().toString().trim());
+                intent.putExtra("input_4",Input_4.getEditText().getText().toString().trim());
                 startActivity(intent);
                 finish();
             }

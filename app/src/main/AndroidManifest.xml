@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".withdraw_new"></activity>
+        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".withdraw_new" />
         <activity android:name=".deposit_new" />
         <activity android:name=".splash_screen">
             <intent-filter>

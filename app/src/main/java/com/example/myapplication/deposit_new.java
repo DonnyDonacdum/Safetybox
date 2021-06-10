@@ -26,7 +26,7 @@ public class deposit_new extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), MainActivity2.class);
                 intent.putExtra("input_1",Input_1.getEditText().getText().toString().trim());
-                intent.putExtra("input2",Input_2.getEditText().getText().toString().trim());
+                intent.putExtra("input_2",Input_2.getEditText().getText().toString().trim());
                 startActivity(intent);
                 finish();
             }
