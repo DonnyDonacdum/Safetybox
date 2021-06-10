@@ -13,32 +13,33 @@ private Button meep,maad;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        What();
-        pushher();
-        pushme();
-
+        maad = (Button) findViewById(R.id.mad);
+        meep = (Button) findViewById(R.id.deppsito);
+        meep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), deposit_new.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        maad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), deposit_new.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void What() {
-        maad = findViewById(R.id.mad);
-        meep = findViewById(R.id.Deppsito);
+
     }
     private void pushher() {
-        meep.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,draw.class);
-                startActivity(intent);
-            }
-        });
+
     }
     private void pushme() {
-        meep.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,with.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
